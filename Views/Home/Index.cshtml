@@ -1,0 +1,47 @@
+﻿<!-- Lisha Naidoo -->
+<!-- ST10404816 -->
+<!-- Group 1 -->
+
+<!-- References -->
+<!-- https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/ -->
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+<!-- Center-align content using Bootstrap's text-center class -->
+<div class="text-center">
+
+    <!---------------------------------------------------------------------------------------------------------------------------->
+    <!-- Large welcome message with custom font and styling -->
+    <h1 style="font-family: 'Playfair Display', serif; font-size: 40px; color: black;">
+        Welcome
+    </h1>
+
+    <!---------------------------------------------------------------------------------------------------------------------------->
+    <!-- Subtitle message with custom font and styling -->
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 25px; color: black;">
+        Please choose an option:
+    </h2>
+
+    <!---------------------------------------------------------------------------------------------------------------------------->
+    <!-- Spacing added using Bootstrap's mt-4 class (margin-top: 4 units) -->
+    <div class="mt-4">
+        <!-- Button to navigate to the Add Claim page -->
+        <a class="btn btn-outline-secondary mx-2 px-4 py-2" 
+           asp-area="" asp-controller="Claim" asp-action="Create"> <!-- Links to the Claim/Create action -->
+            Add Claim
+        </a>
+
+        <!---------------------------------------------------------------------------------------------------------------------------->
+        <!-- Button to navigate to the View Claims page -->
+        <a class="btn btn-outline-secondary mx-2 px-4 py-2" 
+           asp-area="" asp-controller="Claim" asp-action="ViewClaims"> <!-- Links to the Claim/ViewClaims action -->
+            View Claims
+        </a>
+    </div>
+</div>
+<!------------------------------------------...ooo000 END OF FILE 000ooo...------------------------------------------------------>
+
+
